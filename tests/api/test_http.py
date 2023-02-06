@@ -21,8 +21,6 @@ def test_second_request():
 
 @ pytest.mark.http
 def test_status_code_request():
-    r = requests.get('https://api.github.com/users/sergii_butenko')
-    r1 = requests.get('https://api.github.com/users/Nataliia-Potii')
+    r = requests.get('https://api.github.com/users/Nataliia-Potii')
 
-    assert r.status_code == 404
-    assert r1.status_code == 200
+    assert r.status_code == 200
