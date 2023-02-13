@@ -53,4 +53,3 @@ def test_detailed_orders(database):
 
     # Check structure of data
     assert orders[0] == (1, 'Sergii', 'солодка вода', 'з цукром')
-    

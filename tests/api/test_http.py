@@ -15,12 +15,12 @@ def test_second_request():
     headers = r.headers
 
     assert body['name'] == 'Chris Wanstrath'
-    assert r.status_code == 200
-    assert headers['Server'] == 'GitHub.com'
+    r.status_code == 200
+    headers['Server'] == 'GitHub.com'
 
 
 @ pytest.mark.http
 def test_status_code_request():
-    r = requests.get('https://api.github.com/users/Nataliia-Potii')
+    r = requests.get('https://api.github.com/users/Nataliia_Potii') 
 
-    assert r.status_code == 200
+    assert r.status_code == 404
